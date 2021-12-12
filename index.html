@@ -8,7 +8,47 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="optionsContainer">
+    <div class="selectMode">
+      <button class="pvp">Player vs Player</button>
+      <button class="pvc">Player vs Computer</button>
+    </div>
+    <div class="pvpContainer">
+      <label for="p1Name">Enter your name
+        <input type="text" id="p1Name">
+      </label>
+      <label for="p2Name">Enter your name
+        <input type="text" id="p1Name">
+      </label>
+      <button class="startPvpGame">Start game</button>
+    </div>
+    <div class="pvcContainer">
+      <label for="pName">Enter your name
+        <input type="text" id="p1Name">
+      </label>
+      <div class="markBtnContainer">
+        <button class="xMark">X</button>
+        <button class="oMark">O</button>
+      </div>
+      <button class="startPvcGame">Start game</button>
+    </div>
+  </div>
   <h1>Tic Tac Toe - The game</h1>
+  <div class="board">
+    <div class="board-item active" i='0' j ='0'></div>
+    <div class="board-item active" i='0' j ='1'></div>
+    <div class="board-item active" i='0' j ='2'></div>
+    <div class="board-item active" i='1' j ='0'></div>
+    <div class="board-item active" i='1' j ='1'></div>
+    <div class="board-item active" i='1' j ='2'></div>
+    <div class="board-item active" i='2' j ='0'></div>
+    <div class="board-item active" i='2' j ='1'></div>
+    <div class="board-item active" i='2' j ='2'></div>
+  </div>
+  <button class="restartBtn">Restart game</button>
+  <script src="controls.js"></script>
+  <script src="board.js"></script>
+  <script src="players.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
