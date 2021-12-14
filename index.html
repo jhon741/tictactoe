@@ -14,22 +14,26 @@
       <button class="pvc">Player vs Computer</button>
     </div>
     <div class="pvpContainer">
-      <label for="p1Name">Enter your name
+      <label for="p1Name">Enter p1 name
         <input type="text" id="p1Name">
+        <p>mark: X</p>
       </label>
-      <label for="p2Name">Enter your name
-        <input type="text" id="p1Name">
+      <label for="p2Name">Enter p2 name
+        <input type="text" id="p2Name">
+        <p>mark: O</p>
       </label>
+      <p>"X" goes first</p>
       <button class="startPvpGame">Start game</button>
     </div>
     <div class="pvcContainer">
       <label for="pName">Enter your name
-        <input type="text" id="p1Name">
+        <input type="text" id="pName">
       </label>
       <div class="markBtnContainer">
         <button class="xMark">X</button>
         <button class="oMark">O</button>
       </div>
+      <p>"X" goes first</p>
       <button class="startPvcGame">Start game</button>
     </div>
   </div>
@@ -46,9 +50,11 @@
     <div class="board-item active" i='2' j ='2'></div>
   </div>
   <button class="restartBtn">Restart game</button>
+  <script src="pubSub.js"></script>
+  <!-- <script src="players.js"></script> -->
   <script src="controls.js"></script>
   <script src="board.js"></script>
-  <script src="players.js"></script>
-  <script src="app.js"></script>
+  <script src="pvpLogic.js"></script>
+  <script src="pvcLogic.js"></script>
 </body>
 </html>
